@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Best Cars Dealership</a>
+  <div class="navbar-nav ml-auto">
+    <a class="nav-link" href="{% url 'djangoapp:about' %}">About Us</a>
+    <a class="nav-link" href="{% url 'djangoapp:contact' %}">Contact Us</a>
+  </div>
+</nav>
+<div class="container mt-5">
+  <div class="jumbotron">
+    <h1 class="display-4">Welcome to Best Cars!</h1>
+    <p class="lead">The national database for dealership reviews.</p>
+    <hr class="my-4">
+    <p>View branches, read reviews, and share your experience.</p>
+    <a class="btn btn-primary btn-lg" href="#" role="button">View Dealerships</a>
+  </div>
+</div>
+</body>
+</html>
