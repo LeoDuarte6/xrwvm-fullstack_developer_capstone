@@ -3,17 +3,30 @@
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
-<body>
-<nav class="navbar navbar-light bg-light">
-  <a class="navbar-brand" href="{% url 'djangoapp:index' %}">Best Cars Dealership</a>
-  <ul class="nav">
-    <li class="nav-item"><a class="nav-link active" href="{% url 'djangoapp:about' %}">About Us</a> [cite: 13]</li>
-    <li class="nav-item"><a class="nav-link" href="{% url 'djangoapp:contact' %}">Contact Us</a> [cite: 12]</li>
-  </ul>
+<body class="bg-light">
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="/">Best Cars Dealership</a>
 </nav>
 <div class="container mt-5">
-  <h1>About Us</h1>
-  <p>Welcome to Best Cars Dealership. We provide a central database of reviews to increase transparency and trust. [cite: 6, 9]</p>
+  <div class="jumbotron bg-white shadow-sm">
+    <h1 class="display-4">About Us</h1>
+    <p class="lead">Serving the United States since 2025.</p>
+    <hr class="my-4">
+    <div class="row text-center">
+      <div class="col-md-4">
+        <h5>Leo Duarte</h5>
+        <p class="text-muted">Lead Full-Stack Developer</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Berkly Shepley</h5>
+        <p class="text-muted">Regional Manager</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Our Mission</h5>
+        <p>Transparency and trust in every car review.</p>
+      </div>
+    </div>
+  </div>
 </div>
 </body>
 </html>

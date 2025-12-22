@@ -3,14 +3,19 @@
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
-<body>
-<nav class="navbar navbar-light bg-light">
-  <a class="navbar-brand" href="{% url 'djangoapp:index' %}">Best Cars Dealership</a>
+<body class="bg-light">
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="/">Best Cars Dealership</a>
 </nav>
 <div class="container mt-5">
-  <h1>Contact Us</h1>
-  <p>Email: support@bestcars.com</p>
-  <p>Phone: 1-800-BEST-CAR</p>
+  <div class="card shadow">
+    <div class="card-header bg-primary text-white"><h3>Contact Us</h3></div>
+    <div class="card-body">
+      <p><strong>Support Email:</strong> support@bestcars.com</p>
+      <p><strong>Main Phone:</strong> +1 (800) 555-0199</p>
+      <p><strong>Corporate Headquarters:</strong> 123 Car Row, Detroit, MI</p>
+    </div>
+  </div>
 </div>
 </body>
 </html>
