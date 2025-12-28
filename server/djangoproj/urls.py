@@ -9,16 +9,28 @@ import os
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('djangoapp/', include('djangoapp.urls')),
-    
+
     # React app routes
     path('', TemplateView.as_view(template_name="index.html")),
     path('login/', TemplateView.as_view(template_name="index.html")),
     path('register/', TemplateView.as_view(template_name="index.html")),
-    
+    path('dealers/', TemplateView.as_view(template_name="index.html")),
+    path(
+        'dealer/<int:dealer_id>/',
+        TemplateView.as_view(template_name="index.html")
+    ),
+    path(
+        'postreview/<int:dealer_id>/',
+        TemplateView.as_view(template_name="index.html")
+    ),
+
     # Django template routes (Module 1 - these render the nice Bootstrap pages)
     path('about/', views.about, name='about'),
     path('contact/', views.contact, name='contact'),
 ]
 
 # Serve static files
-urlpatterns += static('/static/', document_root=os.path.join(settings.BASE_DIR, 'static'))
+urlpatterns += static(
+    '/static/',
+    document_root=os.path.join(settings.BASE_DIR, 'static')
+)
